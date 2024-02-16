@@ -124,11 +124,3 @@ Group By Clause
 
 select deptId from employee_info group by deptId;
 select deptId, round(avg(empSalary), 2) from employee_info group by deptId; 
-
-Having Clause
-
-select deptId, sum(empSalary) as 'Total Salary' from employee_info group by deptId having deptId = 10;
-
-select deptId, sum(empSalary) as 'Total Salary' from employee_info group by deptId having sum(empSalary) > 100000;
-
-select deptId, sum(empSalary) as 'Total Salary' from employee_info where deptId = 11 group by deptId;
