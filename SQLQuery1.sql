@@ -41,3 +41,11 @@ Order BY
 
 select * from employee_info order by empSalary asc;
 select * from employee_info order by empSalary desc;
+
+Aggregate Function or Group Function
+
+select sum(empSalary) from employee_info; 
+select min(empSalary) from employee_info; 
+select max(empSalary) from employee_info; 
+select avg(empSalary) from employee_info; 
+select count(empSalary) from employee_info;
